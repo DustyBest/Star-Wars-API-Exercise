@@ -12,8 +12,9 @@ export class HomeComponent implements OnInit {
 
   currentPage = 1;
   total = 0;
-  people = [];
+  people : any = [];
   loading = true;
+  selected;
 
   constructor(private people$: PeopleService ) { 
     
