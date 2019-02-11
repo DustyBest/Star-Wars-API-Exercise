@@ -1,18 +1,29 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <header class="header-6">
   <div class="header-nav" [clr-nav-level]="1">
-    <a class="nav-link" href="#" [routerLink]="['/home']" routerLinkActive="active">
-      <span class="nav-text">Home</span></a>
-    <a class="nav-link" href="#" [routerLink]="['/test']" routerLinkActive="active">
-      <span class="nav-text">Test</span></a>
+    <a
+      class="nav-link"
+      href="#"
+      [routerLink]="['/home']"
+      routerLinkActive="active"
+    >
+      <span class="nav-text">Home</span></a
+    >
+    <a
+      class="nav-link"
+      href="#"
+      [routerLink]="['/test']"
+      routerLinkActive="active"
+    >
+      <span class="nav-text">Test</span></a
+    >
   </div>
 </header>
 
 <div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
+  <h1>{{ title }}</h1>
 </div>
 
-<router-outlet></router-outlet>
-
+<div style="margin: 25px">
+  <router-outlet></router-outlet>
+</div>
