@@ -24,7 +24,8 @@ export class HomeComponent implements OnInit {
   refresh(state: ClrDatagridStateInterface) {
     console.log(state);
     this.loading = true;
-    this.people$.get(this.currentPage).subscribe( data => {
+    this.people$.get(this.currentPage).subscribe((data:any)  => {
+      console.log(data);
       this.people = data.results;
       this.total = data.count;
       this.loading = false;
